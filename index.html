@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Задание 2</title>
+</head>
+
+<body>
+    <h1>Услуги салона &#171;Модница&#187;</h1>
+
+    <form>
+        <div>
+            <div class="manicure-block">
+                <label for="manicure-field"><span class="bold-text">Маникюр</span> (300 р.)</label>
+                <input class="product manicure-block__item" type="checkbox" name="manicure" id="manicure-field"
+                    value="300">
+            </div>
+
+            <div>
+                <p>Покрытие гель-лак</p>
+                <div class="varnish-block">
+                    <div>
+                        <label for="design-varnish">С дизайном (1700 р.)</label>
+                        <input class="product" type="radio" name="varnish" id="design-varnish" value="1700">
+                    </div>
+
+                    <div>
+                        <label for="plain-varnish">Однотонный (1200 р.)</label>
+                        <input class="product" type="radio" name="varnish" id="plain-varnish" value="1200">
+                    </div>
+                </div>
+            </div>
+
+            <div class="pedicure-block">
+                <label for="pedicure-field"><span class="bold-text">Педикюр</span> (1900 р.)</label>
+                <input class="product" type="checkbox" name="pedicure" id="pedicure-field" value="1900">
+            </div>
+
+            <div>
+                <p>Брови</p>
+                <div class="brows-block">
+                    <label for="correction-brows-field">Коррекция (200 р.)</label>
+                    <input class="product" type="checkbox" name="correction-brows" id="correction-brows-field"
+                        value="200">
+
+                    <label for="staining-brows-field">Окрашивание (300 р.)</label>
+                    <input class="product" type="checkbox" name="staining-brows" id="staining-brows-field" value="300">
+                </div>
+            </div>
+
+            <div class="haircut-block">
+                <p>Стрижка</p>
+                <select name="haircut" id="haircut-field">
+                    <option class="product" value="0">Выберите нужную длину</option>
+                    <option class="product" value="1000">Короткие (1000 р.)</option>
+                    <option class="product" value="1500">Средние (1500 р.)</option>
+                    <option class="product" value="2500">Длинные (2500 р.)</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Окрашивание волос</p>
+                <div class="hair-block">
+                    <div>
+                        <label for="staining-blond-field">Обесцвечивание/блонд (5000 р.)</label>
+                        <input class="product" type="radio" name="staining" id="staining-blond-field" value="5000">
+                    </div>
+
+                    <div>
+                        <label for="staining-plain-field">Обычное окрашивание (3500 р.)</label>
+                        <input class="product" type="radio" name="staining" id="staining-plain-field" value="3500">
+                    </div>
+                </div>
+            </div>
+
+            <button class="calc">Посчитать</button>
+
+            <div class="result"></div>
+        </div>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
